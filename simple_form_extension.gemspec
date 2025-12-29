@@ -23,6 +23,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'simple_form'
   spec.add_dependency 'selectize-rails'
 
-  spec.add_development_dependency 'bundler', '~> 1.5'
+  spec.add_development_dependency 'bundler', '~> 2.4'
   spec.add_development_dependency 'rake'
 end
