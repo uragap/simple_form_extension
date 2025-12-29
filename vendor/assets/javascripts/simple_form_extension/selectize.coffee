@@ -28,7 +28,7 @@ class Selectize
     # input.
     @$el.next('.selectize-control')
         .find('.selectize-input input[type="hidden"]')
-        .attr('type', 'text')
+        .prop('type', 'text')
 
   initializeValue: (data) ->
     if @single

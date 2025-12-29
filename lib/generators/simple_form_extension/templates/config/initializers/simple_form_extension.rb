@@ -54,15 +54,4 @@ SimpleForm.setup do |config|
       ba.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
     end
   end
-
-  # Add default wrapper for date inputs if the simple_form_bootstrap initializer
-  # has been generated
-  #
-  if config.wrappers.keys.include?('vertical_form')
-    config.wrapper_mappings = {
-      datetime: :vertical_form,
-      date: :vertical_form,
-      time: :vertical_form
-    }
-  end
 end
