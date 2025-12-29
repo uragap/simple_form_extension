@@ -1,6 +1,7 @@
 # Simple Form Extension
 
 This gems adds custom common input types to simple form.
+Fork of https://github.com/glyph-fr/simple_form_extension with updates
 
 ## Available inputs
 
@@ -278,15 +279,15 @@ $.get('/form/url', function(response) {
 })
 ```
 
-## Disabling image input file type validation 
+## Disabling image input file type validation
 
 By default, Simple Form Extension restricts the image file types users can
-select to JPEG, PNG and GIF file types. This is done by using the `accept` 
+select to JPEG, PNG and GIF file types. This is done by using the `accept`
 html attribute of the input tag.
 
 You can turn off this behavior by :
 
-- Setting `SimpleFormExtension.default_image_input_accept = nil` in an 
+- Setting `SimpleFormExtension.default_image_input_accept = nil` in an
 initializer for an app-wide setting
 - Setting `form.input :image, input_html: { accept: nil }` locally on the fields
 you want to allow other input types
